@@ -3,6 +3,7 @@ var router = express.Router();
 
 // 接続情報を設定
 const { MongoClient } = require("mongodb");
+// 接続URIはpasswordやユーザー名などを含むため、gitなどにpushしないように注意すること
 const uri = "";
 const client = new MongoClient(uri);
 
